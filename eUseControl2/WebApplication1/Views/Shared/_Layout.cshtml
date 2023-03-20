@@ -1,0 +1,82 @@
+﻿@using System.Web.Optimization
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--====== Title ======-->
+    <title>Qichen - Restaurant HTML Template</title>
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="/Content/images/favicon.ico" type="image/png">
+    <!--====== Flaticon css ======-->
+    <!-->link rel="stylesheet" href="assets/fonts/flaticon/flaticon.css"-->
+    <!--====== FontAwesome css ======-->
+    @Styles.Render("~/bundles/fontawesome/css")
+    <!--====== Bootstrap css ======-->
+    @Styles.Render("~/bundles/bootstrap/css")
+    <!--====== magnific-popup css ======-->
+    <!-->link rel="stylesheet" href="assets/vendor/magnific-popup/dist/magnific-popup.css"-->
+    <!--====== Slick-popup css ======-->
+    @Styles.Render("~/bundles/slick/css")
+    <!--====== Jquery UI css ======-->
+    @Styles.Render("~/bundles/jqueryui/css")
+    <!--====== Nice Select css ======-->
+    @Styles.Render("~/bundles/niceselect/css")
+    <!--====== Animate css ======-->
+    @Styles.Render("~/bundles/animate/css")
+    <!--====== Default css ======-->
+    @Styles.Render("~/bundles/default/css")
+    <!--====== Style css ======-->
+    @Styles.Render("~/bundles/style/css")
+
+</head>
+<body>
+    @Html.Partial("_SearchForm")
+    @Html.Partial("_Header")
+    @Html.Partial("_Banner")
+    @Html.Partial("_Category")
+    @Html.Partial("_About")
+    @Html.Partial("_MenuList")
+    @Html.Partial("_Chefs")
+    @Html.Partial("_Video")
+    @Html.Partial("_Working")
+    @Html.Partial("_Reservation")
+    @Html.Partial("_Testimonial")
+    @Html.Partial("_Instagram")
+    @Html.Partial("_Footer")
+    @RenderBody()
+    <!--=== End Reservation Section ===-->
+<!--====== Back To Top  ======-->
+
+    <a href="#" class="back-to-top"><i class="far fa-angle-up"></i></a>
+    <!--====== Jquery js ======-->
+    @Scripts.Render("~/bundles/jquery/js")
+    <!--====== Bootstrap js ======-->
+    <script src="assets/vendor/popper/popper.min.js"></script>
+    <!--====== Bootstrap js ======-->
+@Scripts.Render("~/bundles/bootstrap/js")
+    <!--====== Slick js ======-->
+@Scripts.Render("~/bundles/slick/js")
+    <!--====== Magnific js ======-->
+    <script src="assets/vendor/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+    <!--====== Isotope js ======-->
+    <script src="assets/vendor/isotope.min.js"></script>
+    <!--====== Imagesloaded js ======-->
+    <script src="assets/vendor/imagesloaded.min.js"></script>
+    <!--====== Counterup js ======-->
+    <script src="assets/vendor/jquery.counterup.min.js"></script>
+    <!--====== Waypoints js ======-->
+    <script src="assets/vendor/jquery.waypoints.js"></script>
+    <!--====== Nice-select js ======-->
+    <script src="assets/vendor/nice-select/js/jquery.nice-select.min.js"></script>
+    <!--====== jquery UI js ======-->
+@Scripts.Render("~/bundles/jqueryui/js")
+    <!--====== WOW js ======-->
+    <script src="assets/vendor/wow.min.js"></script>
+    <!--====== Main js ======-->
+    <script src="assets/js/theme.js"></script>
+</body>
+</html>
