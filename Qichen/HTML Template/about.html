@@ -59,17 +59,18 @@
                     <div class="row">
                         <div class="col-lg-7">
                             <div class="top-left">
-                                <span class="text">Free delivery for all orders over $50. Order your food now!</span>
+                                <span class="text">Rice cakes at the rice cake store.</span>
+                                <!-- Translation: Things are done best when they’re done by the professionals. -->
                             </div>
                         </div>
                         <div class="col-lg-5">
                             <div class="top-right d-flex align-items-center justify-content-lg-end">
                                 <span class="text"><i class="far fa-envelope"></i>Subscribe & Get 10% Off</span>
                                 <ul class="social-link">
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -96,13 +97,6 @@
                                 <!--=== Main Menu ===-->
                                 <nav class="main-menu">
                                     <ul>
-                                        <li class="menu-item has-children"><a href="#" class="active">Home</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="index.html">Home Restaurant</a></li>
-                                                <li><a href="index-2.html">Home Fastfood</a></li>
-                                                <li><a href="index-3.html">Home Seafood</a></li>
-                                            </ul>
-                                        </li>
                                         <li class="menu-item has-children"><a href="#">Menu</a>
                                             <ul class="sub-menu">
                                                 <li><a href="menu-fastfood.html">Menu Fastfood</a></li>
@@ -113,24 +107,16 @@
                                         <li class="menu-item has-children"><a href="#">Shop</a>
                                             <ul class="sub-menu">
                                                 <li><a href="products.html">Our Products</a></li>
-                                                <li><a href="product-details.html">Product Details</a></li>
                                                 <li><a href="cart.html">Sopping Cart</a></li>
                                                 <li><a href="checkout.html">Checkout</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu-item has-children"><a href="#">Blog</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="blog-standard.html">Blog Standard</a></li>
-                                                <li><a href="blog-details.html">Blog Details</a></li>
                                             </ul>
                                         </li>
                                         <li class="menu-item has-children"><a href="#">Pages</a>
                                             <ul class="sub-menu">
                                                 <li><a href="gallery.html">Our Gallery</a></li>
                                                 <li><a href="chefs.html">Our Chefs</a></li>
-                                                <li><a href="history.html">Our History</a></li>
                                                 <li><a href="reservations.html">Reservations</a></li>
-                                                <li><a href="404.html">404</a></li>
+                                                <!--=== <li><a href="404.html">404</a></li>===-->
                                                 <li><a href="faq.html">Faq</a></li>
                                                 <li><a href="contact.html">Contact</a></li>
                                             </ul>
@@ -147,11 +133,54 @@
                                 <div class="search-button">
                                     <div class="search-btn" data-bs-toggle="modal" data-bs-target="#search-modal"><i class="fas fa-search"></i></div>
                                 </div>
-                                <div class="nav-call-button">
-                                    <span><img src="assets/images/call.png" alt="icon"><a href="tel:000(123)45689">000 (123) 456 89</a></span>
+                                <!-- Кнопка-триггер модального окна -->
+                                <button type="button" class="main-btn btn-red" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                  Registration
+                                </button>
+                                
+                                <!-- Модальное окно -->
+                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"                              aria-hidden="true">
+                                  <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                      <div class="modal-header" style="background-color:#DF3F00;">
+                                        <h5 class="modal-title" id="staticBackdropLabel">Registration</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                                      </div>
+                                      <div class="modal-body">
+                                        <form>
+                                            <div class="mb-3">
+                                              <label for="exampleInputEmail1" class="form-label">User Name:</label>
+                                              <input type="user" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" style="background-color:#FDF5F2;">
+                                            </div>
+                                            <div class="mb-3">
+                                              <label for="exampleInputEmail1" class="form-label">Email address:</label>
+                                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" style="background-color:#FDF5F2;">
+                                            </div>
+                                            <div class="mb-3">
+                                              <label for="exampleInputPassword1" class="form-label">Password:</label>
+                                              <input type="password" class="form-control" id="exampleInputPassword1" style="background-color:#FDF5F2;">
+                                              <div id="emailHelp" class="form-text">We'll never share your pass with anyone else.</div>
+                                            </div>
+                                            <div class="mb-3">
+                                              <label for="exampleInputPassword1" class="form-label">Confirm Password:</label>
+                                              <input type="password_re" class="form-control" id="exampleInputPassword1" style="background-color:#FDF5F2;">
+                                              <div id="emailHelp" class="form-text">Use only the keyboard.</div>
+                                            </div>
+                                            <div class="mb-3 form-check">
+                                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                            </div>
+                                        </form>
+                                      </div>
+                                      <div class="modal-footer" style="background-color:#DF3F00;">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="background-color:#000000;">Cancel</button>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                      </div>
+                                    </div>
+                                  </div>
                                 </div>
                                 <div class="menu-button d-xl-block d-none">
-                                    <a href="contact.html" class="main-btn btn-red">Book a Table<i class="fas fa-long-arrow-right"></i></a>
+                                    <a href="reservations.html" class="main-btn btn-red">Book a Table<i class="fas fa-long-arrow-right"></i></a>
                                 </div>
                                 <div class="navbar-toggler">
                                     <span></span>
@@ -190,11 +219,11 @@
                         <div class="about-three_image-box text-lg-end mb-20">
                             <div class="row align-items-center">
                                 <div class="col-md-6">
-                                    <img src="assets/images/about/image-7.jpg" class="about-img-one mb-30 wow fadeInUp" alt="About Image">
-                                    <img src="assets/images/about/image-8.jpg" class="about-img-two mb-30 wow fadeInDown" alt="About Image">
+                                    <img src="assets/images/about/image-7.png" class="about-img-one mb-30 wow fadeInUp" alt="About Image">
+                                    <img src="assets/images/about/image-8.png" class="about-img-two mb-30 wow fadeInDown" alt="About Image">
                                 </div>
                                 <div class="col-md-6">
-                                    <img src="assets/images/about/image-9.jpg" class="about-img-three mb-30 wow fadeInRight" alt="About Image">
+                                    <img src="assets/images/about/image-9.png" class="about-img-three mb-30 wow fadeInRight" alt="About Image">
                                 </div>
                             </div>
                         </div>
@@ -205,8 +234,7 @@
                                 <span class="sub-title">About Qichen</span>
                                 <h2>The Cleanest, Most Delicious Vegan Cookie Dough Ever.</h2>
                             </div>
-                            <p class="wow fadeInDown">Sed ut perspiciatis unde omnis natus sit voluptatem accusantium doloremque laudantium totam aperiam eaque queabillo inventore
-                                veritatis et quasi architecto beatae vitae sunt explicabo.</p>
+                            <p class="wow fadeInDown">Indulge in guilt-free snacking with our vegan cookie dough recipe! Made with only the cleanest and healthiest ingredients, you can enjoy the delectable taste of cookie dough without any added sugar, dairy, or eggs. Our recipe is easy to make and packed with nutritious ingredients that will satisfy your sweet tooth and leave you feeling energized. Get ready to enjoy the cleanest, most delicious vegan cookie dough ever!</p>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="fancy-icon-box mb-50 wow fadeInUp">
@@ -250,18 +278,6 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="about-button wow fadeInUp">
-                                <a href="about.html" class="main-btn btn-red">learn more<i class="far fa-arrow-right"></i></a>
-                                <a href="tel:000(123)45689" class="call-button">
-                                    <div class="icon">
-                                        <i class="fas fa-headset"></i>
-                                    </div>
-                                    <div class="text">
-                                        <span>Call For Order</span>
-                                        <h5>000 (123) 456 89</h5>
-                                    </div>
-                                </a>
                             </div>
                         </div>
                     </div>
@@ -327,85 +343,6 @@
                 </div>
             </div>
         </section><!--=== End Fact Section ===-->
-        <!--=== Start Why_choose Section ===-->
-        <section class="why-choose-us pt-130 pb-100">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-xl-6 col-lg-12">
-                        <div class="choose-content-box content-box-gap mb-30 wow fadeInLeft">
-                            <div class="section-title section-title-left mb-20">
-                                <span class="sub-title">Why Choos us</span>
-                                <h2>We’re Awards Winning Restaurant. 25+ Years Of Experience In Restaurant Services</h2>
-                            </div>
-                            <p>Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis</p>
-                            <ul class="check-style-one mb-35">
-                                <li>Best Way to Serve Our Foods</li>
-                                <li>Low Cost & Onlie Orders</li>
-                            </ul>
-                            <a href="about.html" class="main-btn btn-red">learn more<i class="far fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-12">
-                        <div class="choose-item-list">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="fancy-features-item mb-30 wow fadeInUp">
-                                        <div class="icon">
-                                            <i class="flaticon-pizza-slice-1"></i>
-                                        </div>
-                                        <div class="text">
-                                            <h3 class="title">Fastfoods</h3>
-                                            <p>Sit amet consecte adisce
-                                                epsum nisi commos</p>
-                                            <a href="about.html" class="btn-link">Read more</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="fancy-features-item mb-30 wow fadeInUp">
-                                        <div class="icon">
-                                            <i class="flaticon-chef-1"></i>
-                                        </div>
-                                        <div class="text">
-                                            <h3 class="title">Experience Chefs</h3>
-                                            <p>Sit amet consecte adisce
-                                                epsum nisi commos</p>
-                                            <a href="about.html" class="btn-link">Read more</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="fancy-features-item mb-30 wow fadeInUp">
-                                        <div class="icon">
-                                            <i class="flaticon-delivery-man"></i>
-                                        </div>
-                                        <div class="text">
-                                            <h3 class="title">Online Delivery</h3>
-                                            <p>Sit amet consecte adisce
-                                                epsum nisi commos</p>
-                                            <a href="about.html" class="btn-link">Read more</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="fancy-features-item mb-30 wow fadeInUp">
-                                        <div class="icon">
-                                            <i class="flaticon-food-serving"></i>
-                                        </div>
-                                        <div class="text">
-                                            <h3 class="title">Fine Dining</h3>
-                                            <p>Sit amet consecte adisce
-                                                epsum nisi commos</p>
-                                            <a href="about.html" class="btn-link">Read more</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section><!--=== End Why_choose Section ===-->
         <!--=== Start Team Section ===-->
         <section class="team-section light-red-bg p-r z-1 pt-120 pb-100">
             <div class="dot-bg bg_cover" style="background-image: url(assets/images/bg/dot-bg.png);"></div>
@@ -413,7 +350,8 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-5 col-lg-10">
                         <div class="section-title text-center mb-50 wow fadeInDown">
-                            <span class="sub-title">Best food menu</span>
+                            <span class="sub-title">BEST FOOD CHEFS
+</span>
                             <h2>Meet Our Experience
                                 & Master Chefs</h2>
                         </div>
@@ -478,39 +416,6 @@
                 </div>
             </div>
         </section><!--=== End Team Section ===-->
-        <!--=== Start Video Section ===-->
-        <section class="video-line-section pt-130 pb-80 p-r z-1">
-            <div class="line-shape line-shape-one"><span><img src="assets/images/shape/line-1.png" alt="Shape"></span></div>
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-7">
-                        <!--=== Video Image Box ===-->
-                        <div class="video-one_image-box mb-50 p-r z-1 wow fadeInLeft">
-                            <img src="assets/images/gallery/video-1.jpg" alt="Video Image">
-                            <div class="image-overlay"></div>
-                            <div class="play-content-box">
-                                <a href="https://www.youtube.com/watch?v=t8k71QcArnk" class="video-popup"><i class="fas fa-play"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <!--=== Video Content Box ===-->
-                        <div class="video-content-box content-box-gap pl-lg-40 mb-50 wow fadeInRight">
-                            <div class="section-title section-title-left">
-                                <span class="sub-title">Watch Videos</span>
-                                <h2>How Can We Made Foods For Customers</h2>
-                            </div>
-                            <p>Sit amet consectetur adipiscing elitsue risus mauris quam adipiscing phasellus aene ante orcirat scelerisque enim ut nulla</p>
-                            <ul class="check-style-one mb-30">
-                                <li>Best Way to Serve Our Foods</li>
-                                <li>Low Cost & Onlie Orders</li>
-                            </ul>
-                            <a href="about.html" class="main-btn btn-black">watch more<i class="far fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section><!--=== End Video Section ===-->
         <!--=== Start Team Section ===-->
         <section class="testimonial-section-three pb-130">
             <div class="container">
@@ -543,12 +448,10 @@
                                 </div>
                             </div>
                             <h3>“Yamee Foods”</h3>
-                            <p>Sed ut perspiciatis unde omiste natus error sit volupt accusantium
-                                doloremque laudantium totam rem aperiam, eaque ipsa quae ab
-                                inventore veritatis et quase </p>
+                            <p>This dish is absolutely delicious! The flavors are exceptional and every bite is pure heaven. Highly recommended!</p>
                             <div class="author-title-thumb">
                                 <div class="author-thumb">
-                                    <img src="assets/images/testimonial/author-thumb-2.jpg" alt="Author Thumb">
+                                    <img src="assets/images/testimonial/author-thumb-2.png" alt="Author Thumb">
                                 </div>
                                 <div class="author-title">
                                     <h3 class="title">Hubert J. Johnson</h3>
@@ -574,12 +477,10 @@
                                 </div>
                             </div>
                             <h3>“Mind blowing”</h3>
-                            <p>Sed ut perspiciatis unde omiste natus error sit volupt accusantium
-                                doloremque laudantium totam rem aperiam, eaque ipsa quae ab
-                                inventore veritatis et quase </p>
+                            <p>This dish is amazing! The flavors are outstanding and each bite is a real treat. Highly recommended!</p>
                             <div class="author-title-thumb">
                                 <div class="author-thumb">
-                                    <img src="assets/images/testimonial/author-thumb-3.jpg" alt="Author Thumb">
+                                    <img src="assets/images/testimonial/author-thumb-3.png" alt="Author Thumb">
                                 </div>
                                 <div class="author-title">
                                     <h3 class="title">Dwayne S. Gilfillan</h3>
@@ -605,12 +506,10 @@
                                 </div>
                             </div>
                             <h3>“Delicious”</h3>
-                            <p>Sed ut perspiciatis unde omiste natus error sit volupt accusantium
-                                doloremque laudantium totam rem aperiam, eaque ipsa quae ab
-                                inventore veritatis et quase </p>
+                            <p>Wow, this dish is fantastic! The flavors are amazing and every bite is a true pleasure. Highly recommended!</p>
                             <div class="author-title-thumb">
                                 <div class="author-thumb">
-                                    <img src="assets/images/testimonial/author-thumb-4.jpg" alt="Author Thumb">
+                                    <img src="assets/images/testimonial/author-thumb-4.png" alt="Author Thumb">
                                 </div>
                                 <div class="author-title">
                                     <h3 class="title">Michael B. Jorgensen</h3>
@@ -636,12 +535,10 @@
                                 </div>
                             </div>
                             <h3>“Mind blowing”</h3>
-                            <p>Sed ut perspiciatis unde omiste natus error sit volupt accusantium
-                                doloremque laudantium totam rem aperiam, eaque ipsa quae ab
-                                inventore veritatis et quase </p>
+                            <p>This dish is simply amazing! The flavors are perfectly balanced and every bite is a delight. Highly recommended!</p>
                             <div class="author-title-thumb">
                                 <div class="author-thumb">
-                                    <img src="assets/images/testimonial/author-thumb-2.jpg" alt="Author Thumb">
+                                    <img src="assets/images/testimonial/author-thumb-1.png" alt="Author Thumb">
                                 </div>
                                 <div class="author-title">
                                     <h3 class="title">Brian A. Barnes</h3>
@@ -660,37 +557,37 @@
                 <div class="partner-slider-one wow fadeInDown">
                     <div class="single-partner-item">
                         <div class="partner-img">
-                            <a href="#"><img src="assets/images/partners/partner-1.png" alt="Partner Image"></a>
+                            <a><img src="assets/images/partners/partner-1.png" alt="Partner Image"></a>
                         </div>
                     </div>
                     <div class="single-partner-item">
                         <div class="partner-img">
-                            <a href="#"><img src="assets/images/partners/partner-2.png" alt="Partner Image"></a>
+                            <a><img src="assets/images/partners/partner-2.png" alt="Partner Image"></a>
                         </div>
                     </div>
                     <div class="single-partner-item">
                         <div class="partner-img">
-                            <a href="#"><img src="assets/images/partners/partner-3.png" alt="Partner Image"></a>
+                            <a><img src="assets/images/partners/partner-3.png" alt="Partner Image"></a>
                         </div>
                     </div>
                     <div class="single-partner-item">
                         <div class="partner-img">
-                            <a href="#"><img src="assets/images/partners/partner-4.png" alt="Partner Image"></a>
+                            <a><img src="assets/images/partners/partner-4.png" alt="Partner Image"></a>
                         </div>
                     </div>
                     <div class="single-partner-item">
                         <div class="partner-img">
-                            <a href="#"><img src="assets/images/partners/partner-5.png" alt="Partner Image"></a>
+                            <a><img src="assets/images/partners/partner-5.png" alt="Partner Image"></a>
                         </div>
                     </div>
                     <div class="single-partner-item">
                         <div class="partner-img">
-                            <a href="#"><img src="assets/images/partners/partner-6.png" alt="Partner Image"></a>
+                            <a><img src="assets/images/partners/partner-6.png" alt="Partner Image"></a>
                         </div>
                     </div>
                     <div class="single-partner-item">
                         <div class="partner-img">
-                            <a href="#"><img src="assets/images/partners/partner-4.png" alt="Partner Image"></a>
+                            <a><img src="assets/images/partners/partner-4.png" alt="Partner Image"></a>
                         </div>
                     </div>
                 </div>
@@ -699,10 +596,13 @@
         <!--=== Start Footer ===-->
         <footer class="footer-dark dark-black-bg text-white p-r z-1 pt-80">
             <!--=== Footer Widget ===-->
+            <div class="dot-bg bg_cover" style="background-image: url(assets/images/bg/dot-bg.png);"></div>
+            <!--=== Footer Widget Area ===-->
             <div class="footer-widget-area pb-10 pb-40">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-3 col-md-6">
+                            <!--=== Footer Widget ===-->
                             <div class="footer-widget about-company-widget pr-lg-30 mb-40 wow fadeInUp">
                                 <div class="footer-content">
                                     <a href="index.html" class="footer-logo mb-30"><img src="assets/images/logo/logo-white.png" alt="Brand Logo"></a>
@@ -717,41 +617,22 @@
                             </div>
                         </div>
                         <div class="col-lg-2 col-md-6">
+                            <!--=== Footer Widget ===-->
                             <div class="footer-widget footer-nav-widget pl-lg-30 mb-40 wow fadeInDown">
                                 <h4 class="widget-title">Quick Links</h4>
                                 <div class="footer-nav-content">
                                     <ul class="footer-nav">
-                                        <li><a href="#">About Company</a></li>
-                                        <li><a href="#">Home Shop</a></li>
-                                        <li><a href="#">Our Menu (CMS)</a></li>
-                                        <li><a href="#">Shop (Ecom)</a></li>
-                                        <li><a href="#">Recipes</a></li>
+                                        <li><a href="about.html">About Company</a></li>
+                                        <li><a href="products.html">Home Shop</a></li>
+                                        <li><a href="menu-fastfood.html">Fast Food</a></li>
+                                        <li><a href="menu-seafood.html">Sea Food</a></li>
+                                        <li><a href="reservations.html">Reservation</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
-                            <div class="footer-widget footer-nav-widget-two pl-lg-70 mb-40 wow fadeInUp">
-                                <h4 class="widget-title">Quick Links</h4>
-                                <div class="footer-nav-content">
-                                    <ul class="footer-nav">
-                                        <li><a href="#">Hamburger</a></li>
-                                        <li><a href="#">Chicken Burger</a></li>
-                                        <li><a href="#">Vegetable Pizza</a></li>
-                                        <li><a href="#">Chicken Roll</a></li>
-                                        <li><a href="#">Ice-Cream</a></li>
-                                    </ul>
-                                    <ul class="footer-nav">
-                                        <li><a href="#">Potato</a></li>
-                                        <li><a href="#">Organic Juice</a></li>
-                                        <li><a href="#">Lemon Juice</a></li>
-                                        <li><a href="#">MuTton Tikka</a></li>
-                                        <li><a href="#">Seafoods</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
+                            <!--=== Footer Widget ===-->
                             <div class="footer-widget contact-info-widget pl-lg-70 mb-40 wow fadeInDown">
                                 <div class="contact-info-box mb-20">
                                     <span class="title">Call for order:</span>
@@ -773,16 +654,17 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6">
+                            <!--=== Copyright Text ===-->
                             <div class="copyright-text">
-                                <P>&copy; 2022 Qichen, All Rights Reserved</P>
+                                <P>&copy; 2023 Qichen, All Rights Reserved</P>
                             </div>
                         </div>
                         <div class="col-lg-6">
+                            <!--=== Copyright Nav ===-->
                             <div class="copyright-nav float-lg-end">
                                 <ul>
                                     <li><a href="#">Setting & Privacy</a></li>
-                                    <li><a href="#">Faqs</a></li>
-                                    <li><a href="#">Food Menu</a></li>
+                                    <li><a href="faq.html">Faqs</a></li>
                                 </ul>
                             </div>
                         </div>
