@@ -237,13 +237,8 @@
     <Content Include="Views\Shared\_Banner.cshtml" />
     <Content Include="Views\Shared\_Category.cshtml" />
     <Content Include="Views\Shared\_About.cshtml" />
-    <Content Include="Views\Shared\_MenuList.cshtml" />
     <Content Include="Views\Shared\_Chefs.cshtml" />
-    <Content Include="Views\Shared\_Video.cshtml" />
     <Content Include="Views\Shared\_Working.cshtml" />
-    <Content Include="Views\Shared\_Reservation.cshtml" />
-    <Content Include="Views\Shared\_Testimonial.cshtml" />
-    <Content Include="Views\Shared\_Instagram.cshtml" />
     <Content Include="Views\Shared\_Footer.cshtml" />
   </ItemGroup>
   <ItemGroup>
