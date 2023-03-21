@@ -34,6 +34,12 @@ namespace WebApplication1.App_Start
             bundles.Add(new StyleBundle("~/bundles/style/css").Include(
                 "~/Vendor/style.css", new CssRewriteUrlTransform()));
 
+            bundles.Add(new StyleBundle("~/bundles/flaticon/css").Include(
+                "~/Vendor/flaticon/flaticon.css", new CssRewriteUrlTransform()));
+
+            bundles.Add(new StyleBundle("~/bundles/magnific-popup/css").Include(
+                "~/Vendor/magnific-popup/dist/magnific-popup.css", new CssRewriteUrlTransform()));
+
             bundles.Add(new Bundle("~/bundles/bootstrap/js").Include("~/Scripts/bootstrap.min.js"));
 
             bundles.Add(new Bundle("~/bundles/jquery/js").Include("~/Scripts/jquery-3.6.3.js"));
