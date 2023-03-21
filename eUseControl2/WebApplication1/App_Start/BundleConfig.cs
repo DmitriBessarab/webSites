@@ -48,6 +48,23 @@ namespace WebApplication1.App_Start
 
             bundles.Add(new Bundle("~/bundles/jqueryui/js").Include("~/Scripts/jquery-ui.js"));
 
+            bundles.Add(new Bundle("~/bundles/popper/js").Include("~/Vendor/poper/poper.min.js"));
+
+            bundles.Add(new Bundle("~/bundles/magnific-popup/js").Include("~/Vendor/magnific-popup/jquery.magnific-popup.min.js"));
+
+            bundles.Add(new Bundle("~/bundles/isotope/js").Include("~/Vendor/isotope.min.js"));
+
+            bundles.Add(new Bundle("~/bundles/imgloaded/js").Include("~/Vendor/imagesloaded.min.js"));
+
+            bundles.Add(new Bundle("~/bundles/counterup/js").Include("~/Vendor/jquery.counterup.min.js"));
+
+            bundles.Add(new Bundle("~/bundles/waypoints/js").Include("~/Vendor/jquery.waypoints.js"));
+
+            bundles.Add(new Bundle("~/bundles/nice-select/js").Include("~/Vendor/nice-select/js/jquery.nice-select.min.js"));
+
+            bundles.Add(new Bundle("~/bundles/wow/js").Include("~/Vendor/wow.min.js"));
+
+            bundles.Add(new Bundle("~/bundles/theme/js").Include("~/Scripts/js/theme.js"));
 
         }
     }
