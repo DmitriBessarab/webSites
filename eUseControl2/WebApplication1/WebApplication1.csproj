@@ -220,13 +220,19 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\js\theme.js" />
     <Content Include="Vendor\animate.css" />
+    <Content Include="Vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Vendor\bootstrap\js\bootstrap.min.js" />
     <Content Include="Vendor\default.css" />
     <Content Include="Vendor\flaticon\backup.txt" />
     <Content Include="Vendor\flaticon\flaticon.css" />
     <Content Include="Vendor\flaticon\flaticon.html" />
     <Content Include="Vendor\flaticon\flaticon.svg" />
+    <Content Include="Vendor\fontawesome\css\all.min.css" />
     <Content Include="Vendor\imagesloaded.min.js" />
     <Content Include="Vendor\isotope.min.js" />
+    <Content Include="Vendor\jquery-3.6.0.min.js" />
+    <Content Include="Vendor\jquery-ui\jquery-ui.min.css" />
+    <Content Include="Vendor\jquery-ui\jquery-ui.min.js" />
     <Content Include="Vendor\jquery.counterup.min.js" />
     <Content Include="Vendor\jquery.waypoints.js" />
     <Content Include="Vendor\magnific-popup\dist\jquery.magnific-popup.min.js" />
@@ -298,6 +304,22 @@
     <Content Include="Vendor\flaticon\flaticon.woff" />
     <Content Include="Vendor\flaticon\flaticon.woff2" />
     <Content Include="Views\Shared\_Preloader.cshtml" />
+    <Content Include="Vendor\fontawesome\webfonts\fa-brands-400.eot" />
+    <Content Include="Vendor\fontawesome\webfonts\fa-brands-400.ttf" />
+    <Content Include="Vendor\fontawesome\webfonts\fa-brands-400.woff" />
+    <Content Include="Vendor\fontawesome\webfonts\fa-brands-400.woff2" />
+    <Content Include="Vendor\fontawesome\webfonts\fa-light-300.eot" />
+    <Content Include="Vendor\fontawesome\webfonts\fa-light-300.ttf" />
+    <Content Include="Vendor\fontawesome\webfonts\fa-light-300.woff" />
+    <Content Include="Vendor\fontawesome\webfonts\fa-light-300.woff2" />
+    <Content Include="Vendor\fontawesome\webfonts\fa-regular-400.eot" />
+    <Content Include="Vendor\fontawesome\webfonts\fa-regular-400.ttf" />
+    <Content Include="Vendor\fontawesome\webfonts\fa-regular-400.woff" />
+    <Content Include="Vendor\fontawesome\webfonts\fa-regular-400.woff2" />
+    <Content Include="Vendor\fontawesome\webfonts\fa-solid-900.eot" />
+    <Content Include="Vendor\fontawesome\webfonts\fa-solid-900.ttf" />
+    <Content Include="Vendor\fontawesome\webfonts\fa-solid-900.woff" />
+    <Content Include="Vendor\fontawesome\webfonts\fa-solid-900.woff2" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

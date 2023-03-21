@@ -11,13 +11,13 @@ namespace WebApplication1.App_Start
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new StyleBundle("~/bundles/fontawesome/css").Include(
-                "~/Content/font-awesome.min.css", new CssRewriteUrlTransform()));
+                "~/Vendor/fontawesome/css/all.min.css", new CssRewriteUrlTransform()));
 
             bundles.Add(new StyleBundle("~/bundles/bootstrap/css").Include(
-                "~/Content/bootstrap.min.css", new CssRewriteUrlTransform()));
+                "~/Vendor/bootstrap/css/bootstrap.min.css", new CssRewriteUrlTransform()));
 
             bundles.Add(new StyleBundle("~/bundles/jqueryui/css").Include(
-                "~/Content/jquery-ui.css", new CssRewriteUrlTransform()));
+                "~/Vendor/jquery-ui/jquery-ui.min.css", new CssRewriteUrlTransform()));
 
             bundles.Add(new StyleBundle("~/bundles/niceselect/css").Include(
                 "~/Vendor/nice-select/css/nice-select.css", new CssRewriteUrlTransform()));
@@ -40,13 +40,13 @@ namespace WebApplication1.App_Start
             bundles.Add(new StyleBundle("~/bundles/magnific-popup/css").Include(
                 "~/Vendor/magnific-popup/dist/magnific-popup.css", new CssRewriteUrlTransform()));
 
-            bundles.Add(new Bundle("~/bundles/bootstrap/js").Include("~/Scripts/bootstrap.min.js"));
+            bundles.Add(new Bundle("~/bundles/bootstrap/js").Include("~/Vendor/bootstrap/js/bootstrap.min.js"));
 
-            bundles.Add(new Bundle("~/bundles/jquery/js").Include("~/Scripts/jquery-3.6.3.js"));
+            bundles.Add(new Bundle("~/bundles/jquery/js").Include("~/Vendor/jquery-3.6.0.min.js"));
 
             bundles.Add(new Bundle("~/bundles/slick/js").Include("~/Vendor/slick/slick.min.js"));
 
-            bundles.Add(new Bundle("~/bundles/jqueryui/js").Include("~/Scripts/jquery-ui.js"));
+            bundles.Add(new Bundle("~/bundles/jqueryui/js").Include("~/Vendor/jquery-ui/jquery-ui.min.js"));
 
             bundles.Add(new Bundle("~/bundles/popper/js").Include("~/Vendor/poper/poper.min.js"));
 
