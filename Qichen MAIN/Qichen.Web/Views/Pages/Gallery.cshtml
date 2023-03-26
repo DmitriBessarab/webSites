@@ -1,0 +1,402 @@
+﻿@{
+    ViewBag.Title = "Gallery";
+    Layout = "~/Views/Shared/_LayoutAll.cshtml";
+}
+
+<!--====== Start Header ======-->
+<header class="header-area page-header transparent-header">
+    <div class="top-bar text-white">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="top-left">
+                        <span class="text">Eat it raw before all else, then grill it, and boil it last of all.</span>
+                        <!-- Translation: Let no aspect of Japanese cuisine get overlooked. Consider everything – flavours, textures, colours, overall composition and presentation. -->
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="top-right d-flex align-items-center justify-content-lg-end">
+                        <span class="text"><i class="fa fa-envelope"></i>Subscribe & Get 10% Off</span>
+                        <ul class="social-link">
+                            <li><a href="https://www.facebook.com"><i class="fa fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.youtube.com"><i class="fa fa-youtube"></i></a></li>
+                            <li><a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--=== Header Navigation ===-->
+    <div class="header-navigation navigation-two navigation-white">
+        <div class="nav-overlay"></div>
+        <div class="container-fluid">
+            <!--=== Primary Menu ===-->
+            <div class="primary-menu">
+                <!--=== Site Branding ===-->
+                <div class="site-branding">
+                    <a href="index.html" class="brand-logo">
+                        <img src="../Content/images/logo/logo-white.png"
+                             alt="Site Logo">
+                    </a>
+                </div>
+                <!--=== Nav Inner Menu ===-->
+                <div class="nav-inner-menu">
+                    <div class="nav-menu">
+                        <!--=== Mobile Logo ===-->
+                        <div class="mobile-logo mb-30 d-block d-xl-none text-center">
+                            <a href="index.html" class="brand-logo">
+                                <img src="../Content/images/logo/logo-black.png"
+                                     alt="Site Logo">
+                            </a>
+                        </div>
+                        <!--=== Main Menu ===-->
+                        <nav class="main-menu">
+                            <ul>
+                                <li class="
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    ">
+                                    <a href="#">Menu</a>
+                                    <ul class="sub-menu">
+                                        <li>@Html.ActionLink("Menu Fastfood", "MenuFastFood", "Pages")</li>
+                                        <li>@Html.ActionLink("Menu Seafood", "MenuSeaFood", "Pages")</li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    @Html.ActionLink("About", "About", "Pages")
+                                </li>
+                                <li class="menu-item has-children">
+                                    <a href="#">Shop</a>
+                                    <ul class="sub-menu">
+                                        <li>@Html.ActionLink("Our Products", "Products", "Pages")</li>
+                                        <li>@Html.ActionLink("Shopping Cart", "Cart", "Pages")</li>
+                                        <li>@Html.ActionLink("Checkout", "Checkout", "Pages")</li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item 
+                                    
+                                    ">
+                                    <a href="#">Pages</a>
+                                    <ul class="sub-menu">
+                                        <li>@Html.ActionLink("Our Gallery", "Gallery", "Pages")</li>
+                                        <li>@Html.ActionLink("Our Chefs", "Chefs", "Pages")</li>
+                                        <li>@Html.ActionLink("Reservations", "Reservations", "Pages")</li>
+                                        <!--=== <li><a href="404.html">404</a></li>===-->
+                                        <li>@Html.ActionLink("FAQ", "Faq", "Pages")</li>
+                                        <li>@Html.ActionLink("Contact", "Contact", "Pages")</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!--=== Nav Button ===-->
+                        <div class="menu-button mt-40 d-xl-none">
+                            <a href="Contact.cshtml" class="main-btn btn-red">
+                                Book a Table<i class="fa fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--=== Nav right Item ===-->
+                    <div class="nav-right-item d-flex align-items-center">
+                        <div class="search-button">
+                            <div class="search-btn" data-bs-toggle="modal" data-bs-target="#search-modal">
+                                <i class="fa fa-search"></i>
+                            </div>
+                        </div>
+                        <!-- Кнопка-триггер модального окна -->
+                        <button type="button" class="main-btn btn-red" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                            Registration
+                        </button>
+
+                        <!-- Модальное окно -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                             data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                             aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header" style="background-color:#DF3F00;">
+                                        <h5 class="modal-title" id="staticBackdropLabel">Registration</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Закрыть"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">
+                                                    User
+                                                    Name:
+                                                </label>
+                                                <input type="user" class="form-control" id="exampleInputEmail1"
+                                                       aria-describedby="emailHelp" style="background-color:#FDF5F2;">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">
+                                                    Email
+                                                    address:
+                                                </label>
+                                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                                       aria-describedby="emailHelp" style="background-color:#FDF5F2;">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleInputPassword1"
+                                                       class="form-label">Password:</label>
+                                                <input type="password" class="form-control"
+                                                       id="exampleInputPassword1" style="background-color:#FDF5F2;">
+                                                <div id="emailHelp" class="form-text">
+                                                    We'll never share your pass
+                                                    with anyone else.
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleInputPassword1" class="form-label">
+                                                    Confirm
+                                                    Password:
+                                                </label>
+                                                <input type="password_re" class="form-control"
+                                                       id="exampleInputPassword1" style="background-color:#FDF5F2;">
+                                                <div id="emailHelp" class="form-text">Use only the keyboard.</div>
+                                            </div>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">
+                                                    Check me
+                                                    out
+                                                </label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer" style="background-color:#DF3F00;">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                                                style="background-color:#000000;">
+                                            Cancel
+                                        </button>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-button d-xl-block d-none">
+                            <a href="reservations.html" class="main-btn btn-red">
+                                Book a Table<i class="fa fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="navbar-toggler">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</header><!--====== End Header ======-->
+<!--====== Start Breadcrumb Section ======-->
+<section class="page-banner light-red-bg p-r z-1 bg_cover" style="background-image: url(/Content/images/bg/page-bg-1.jpg);">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="page-banner-content text-center wow fadeInDown">
+                    <h1 class="page-title">Gallery</h1>
+                    <ul class="breadcrumb-link text-white">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active">Gallery</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!--====== End Breadcrumb Section ======-->
+<!--====== Start Gallery Section ======-->
+<section class="gallery-section pt-120 pb-90" id="gallery-filter">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-6 col-lg-10">
+                <div class="section-title text-center mb-50 wow fadeInUp">
+                    <span class="sub-title">photo gallery</span>
+                    <h2>Look Inside Photo Gallery</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="gallery-filter-button text-center mb-60 wow fadeInDown">
+                    <ul class="filter-btn">
+                        <li class="active" data-toggle="portfilter">Show All</li>
+                        <li data-filter=".cat-1">Fastfood</li>
+                        <li data-filter=".cat-2">Seafoods</li>
+                        <li data-filter=".cat-3">Drink & Juice</li>
+                        <li data-filter=".cat-4">Coffee</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row gallery-row">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 gallery-column cat-1">
+                <div class="gallery-item-two mb-35 wow fadeInUp">
+                    <div class="gallery-img">
+                        <img src="~/Content/images/gallery/gallery-5.png" alt="Gallery Image">
+                        <div class="hover-overlay">
+                            <a href="#" class="icon-btn"><i class="
+                                                            
+                                                            fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="gallery-content text-center">
+                        <h3 class="title">Hamburger</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 gallery-column cat-1">
+                <div class="gallery-item-two mb-35 wow fadeInUp">
+                    <div class="gallery-img">
+                        <img src="~/Content/images/gallery/gallery-6.png" alt="Gallery Image">
+                        <div class="hover-overlay">
+                            <a href="#" class="icon-btn"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="gallery-content text-center">
+                        <h3 class="title">Pizza</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 gallery-column cat-1">
+                <div class="gallery-item-two mb-35 wow fadeInUp">
+                    <div class="gallery-img">
+                        <img src="~/Content/images/gallery/gallery-7.png" alt="Gallery Image">
+                        <div class="hover-overlay">
+                            <a href="#" class="icon-btn"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="gallery-content text-center">
+                        <h3 class="title">Vegetable Roll</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 gallery-column cat-3">
+                <div class="gallery-item-two mb-35 wow fadeInUp">
+                    <div class="gallery-img">
+                        <img src="~/Content/images/gallery/gallery-8.png" alt="Gallery Image">
+                        <div class="hover-overlay">
+                            <a href="#" class="icon-btn"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="gallery-content text-center">
+                        <h3 class="title">Organic Juice</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 gallery-column cat-1">
+                <div class="gallery-item-two mb-35 wow fadeInUp">
+                    <div class="gallery-img">
+                        <img src="~/Content/images/gallery/gallery-9.png" alt="Gallery Image">
+                        <div class="hover-overlay">
+                            <a href="#" class="icon-btn"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="gallery-content text-center">
+                        <h3 class="title">Sandwich</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 gallery-column cat-1">
+                <div class="gallery-item-two mb-35 wow fadeInUp">
+                    <div class="gallery-img">
+                        <img src="~/Content/images/gallery/gallery-10.png" alt="Gallery Image">
+                        <div class="hover-overlay">
+                            <a href="#" class="icon-btn"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="gallery-content text-center">
+                        <h3 class="title">Soup</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 gallery-column cat-1">
+                <div class="gallery-item-two mb-35 wow fadeInUp">
+                    <div class="gallery-img">
+                        <img src="~/Content/images/gallery/gallery-11.png" alt="Gallery Image">
+                        <div class="hover-overlay">
+                            <a href="#" class="icon-btn"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="gallery-content text-center">
+                        <h3 class="title">Hot Dogs</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 gallery-column cat-4">
+                <div class="gallery-item-two mb-35 wow fadeInUp">
+                    <div class="gallery-img">
+                        <img src="~/Content/images/gallery/gallery-12.png" alt="Gallery Image">
+                        <div class="hover-overlay">
+                            <a href="#" class="icon-btn"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="gallery-content text-center">
+                        <h3 class="title">Latte</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 gallery-column cat-3">
+                <div class="gallery-item-two mb-35 wow fadeInUp">
+                    <div class="gallery-img">
+                        <img src="~/Content/images/gallery/gallery-13.png" alt="Gallery Image">
+                        <div class="hover-overlay">
+                            <a href="#" class="icon-btn"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="gallery-content text-center">
+                        <h3 class="title">Vodka</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 gallery-column cat-2">
+                <div class="gallery-item-two mb-35 wow fadeInUp">
+                    <div class="gallery-img">
+                        <img src="~/Content/images/gallery/gallery-14.png" alt="Gallery Image">
+                        <div class="hover-overlay">
+                            <a href="#" class="icon-btn"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="gallery-content text-center">
+                        <h3 class="title">Lobster</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 gallery-column cat-4">
+                <div class="gallery-item-two mb-35 wow fadeInUp">
+                    <div class="gallery-img">
+                        <img src="~/Content/images/gallery/gallery-15.png" alt="Gallery Image">
+                        <div class="hover-overlay">
+                            <a href="#" class="icon-btn"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="gallery-content text-center">
+                        <h3 class="title">Americano</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 gallery-column cat-2">
+                <div class="gallery-item-two mb-35 wow fadeInUp">
+                    <div class="gallery-img">
+                        <img src="~/Content/images/gallery/gallery-16.png" alt="Gallery Image">
+                        <div class="hover-overlay">
+                            <a href="#" class="icon-btn"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="gallery-content text-center">
+                        <h3 class="title">Fish Fry</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!--====== End Gallery Section ======-->

@@ -1,0 +1,432 @@
+﻿@{
+    ViewBag.Title = "MenuFastfood";
+    Layout = "~/Views/Shared/_LayoutAll.cshtml";
+}
+
+<!--====== Start Header ======-->
+<header class="header-area page-header transparent-header">
+    <div class="top-bar text-white">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="top-left">
+                        <span class="text">You can’t eat the mochi in the picture.</span>
+                        <!-- Translation: Do not spend your days daydreaming about fantasies. No matter how good the imagination, reality is what counts. -->
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="top-right d-flex align-items-center justify-content-lg-end">
+                        <span class="text"><i class="fa fa-envelope"></i>Subscribe & Get 10% Off</span>
+                        <ul class="social-link">
+                            <li><a href="https://www.facebook.com"><i class="fa fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.youtube.com"><i class="fa fa-youtube"></i></a></li>
+                            <li><a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--=== Header Navigation ===-->
+    <div class="header-navigation navigation-two navigation-white">
+        <div class="nav-overlay"></div>
+        <div class="container-fluid">
+            <!--=== Primary Menu ===-->
+            <div class="primary-menu">
+                <!--=== Site Branding ===-->
+                <div class="site-branding">
+                    <a href="index.html" class="brand-logo">
+                        <img src="../Content/images/logo/logo-white.png"
+                             alt="Site Logo">
+                    </a>
+                </div>
+                <!--=== Nav Inner Menu ===-->
+                <div class="nav-inner-menu">
+                    <div class="nav-menu">
+                        <!--=== Mobile Logo ===-->
+                        <div class="mobile-logo mb-30 d-block d-xl-none text-center">
+                            <a href="index.html" class="brand-logo">
+                                <img src="../Content/images/logo/logo-black.png"
+                                     alt="Site Logo">
+                            </a>
+                        </div>
+                        <!--=== Main Menu ===-->
+                        <nav class="main-menu">
+                            <ul>
+                                <li class="menu-item has-children">
+                                    <a href="#">Menu</a>
+                                    <ul class="sub-menu">
+                                        <li>@Html.ActionLink("Menu Fastfood", "MenuFastFood", "Pages")</li>
+                                        <li>@Html.ActionLink("Menu Seafood", "MenuSeaFood", "Pages")</li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    @Html.ActionLink("About", "About", "Pages")
+                                </li>
+                                <li class="menu-item 
+                                    
+                                    ">
+                                    <a href="#">Shop</a>
+                                    <ul class="sub-menu">
+                                        <li>@Html.ActionLink("Our Products", "Products", "Pages")</li>
+                                        <li>@Html.ActionLink("Shopping Cart", "Cart", "Pages")</li>
+                                        <li>@Html.ActionLink("Checkout", "Checkout", "Pages")</li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item has-children">
+                                    <a href="#">Pages</a>
+                                    <ul class="sub-menu">
+                                        <li>@Html.ActionLink("Our Gallery", "Gallery", "Pages")</li>
+                                        <li>@Html.ActionLink("Our Chefs", "Chefs", "Pages")</li>
+                                        <li>@Html.ActionLink("Reservations", "Reservations", "Pages")</li>
+                                        <!--=== <li><a href="404.html">404</a></li>===-->
+                                        <li>@Html.ActionLink("FAQ", "Faq", "Pages")</li>
+                                        <li>@Html.ActionLink("Contact", "Contact", "Pages")</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!--=== Nav Button ===-->
+                        <div class="menu-button mt-40 d-xl-none">
+                            <a href="Contact.cshtml" class="main-btn btn-red">
+                                Book a Table<i class="fa fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--=== Nav right Item ===-->
+                    <div class="nav-right-item d-flex align-items-center">
+                        <div class="search-button">
+                            <div class="search-btn" data-bs-toggle="modal" data-bs-target="#search-modal">
+                                <i class="fa fa-search"></i>
+                            </div>
+                        </div>
+                        <!-- Кнопка-триггер модального окна -->
+                        <button type="button" class="main-btn btn-red" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                            Registration
+                        </button>
+
+                        <!-- Модальное окно -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                             data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                             aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header" style="background-color:#DF3F00;">
+                                        <h5 class="modal-title" id="staticBackdropLabel">Registration</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Закрыть"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">
+                                                    User
+                                                    Name:
+                                                </label>
+                                                <input type="user" class="form-control" id="exampleInputEmail1"
+                                                       aria-describedby="emailHelp" style="background-color:#FDF5F2;">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">
+                                                    Email
+                                                    address:
+                                                </label>
+                                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                                       aria-describedby="emailHelp" style="background-color:#FDF5F2;">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleInputPassword1"
+                                                       class="form-label">Password:</label>
+                                                <input type="password" class="form-control"
+                                                       id="exampleInputPassword1" style="background-color:#FDF5F2;">
+                                                <div id="emailHelp" class="form-text">
+                                                    We'll never share your pass
+                                                    with anyone else.
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleInputPassword1" class="form-label">
+                                                    Confirm
+                                                    Password:
+                                                </label>
+                                                <input type="password_re" class="form-control"
+                                                       id="exampleInputPassword1" style="background-color:#FDF5F2;">
+                                                <div id="emailHelp" class="form-text">Use only the keyboard.</div>
+                                            </div>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">
+                                                    Check me
+                                                    out
+                                                </label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer" style="background-color:#DF3F00;">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                                                style="background-color:#000000;">
+                                            Cancel
+                                        </button>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-button d-xl-block d-none">
+                            <a href="reservations.html" class="main-btn btn-red">
+                                Book a Table<i class="fa fa-long-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="navbar-toggler">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</header><!--====== End Header ======-->
+<!--====== Start Breadcrumb Section ======-->
+<section class="page-banner light-red-bg p-r z-1 bg_cover"
+         style="background-image: url('../Content/images/bg/page-bg-1.jpg');">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="page-banner-content text-center wow fadeInDown">
+                    <h1 class="page-title">Menu</h1>
+                    <ul class="breadcrumb-link text-white">
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li class="active">Fastfood</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!--====== End Breadcrumb Section ======-->
+<!--=== Start Menu Section ===-->
+<section class="menu-section pt-125 pb-80">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-6 col-lg-10">
+                <div class="section-title text-center mb-50 wow fadeInUp">
+                    <span class="sub-title">Best food menu</span>
+                    <h2>Choose Your Best Menus</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="menu-img-box mb-50 pl-lg-30 wow fadeInLeft">
+                    <img src="~/Content/images/menu/menu-single-1.png" alt="Menu Image">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="menu-content-box mb-50 wow fadeInUp">
+                    <div class="single-menu-item mb-30">
+                        <div class="thumb">
+                            <img src="~/Content/images/menu/thumb-1.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h3 class="item-title-price">
+                                @Html.ActionLink("Wasabi burger", "Products", "Pages")
+                                <span class="dot-border"></span><span class="price">$25</span>
+                            </h3>
+                            <p>
+                                A wasabi burger is a type of burger that includes wasabi, a Japanese horseradish,
+                                either as a condiment or mixed into the patty, giving it a spicy kick.
+                            </p>
+                            <ul class="ratings">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><span><a>(75k Reviews)</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="single-menu-item mb-30 wow fadeInUp">
+                        <div class="thumb">
+                            <img src="~/Content/images/menu/thumb-2.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h3 class="item-title-price">
+                                @Html.ActionLink("Pizza Rossini", "Products", "Pages")
+                                <span class="dot-border"></span><span class="price">$63</span>
+                            </h3>
+                            <p>
+                                Pizza Rossini is a type of pizza that typically includes toppings such as prosciutto,
+                                arugula, parmesan cheese, and sometimes truffle oil or balsamic glaze.
+                            </p>
+                            <ul class="ratings">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><span><a>(36k Reviews)</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="single-menu-item mb-30 wow fadeInUp">
+                        <div class="thumb">
+                            <img src="~/Content/images/menu/thumb-3.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h3 class="item-title-price">
+                                @Html.ActionLink("Baked Chicken Wings", "Products", "Pages")
+                                <span class="dot-border"></span><span class="price">$99</span>
+                            </h3>
+                            <p>
+                                Baked chicken wings are a popular appetizer or snack food made by coating chicken
+                                wings in a seasoning or sauce and then baking them in the oven until they are crispy
+                                and tender.
+                            </p>
+                            <ul class="ratings">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><span><a>(31k Reviews)</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="single-menu-item mb-30 wow fadeInUp">
+                        <div class="thumb">
+                            <img src="~/Content/images/menu/thumb-4.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h3 class="item-title-price">
+                                @Html.ActionLink("Seafood Pizza", "Products", "Pages")
+                                <span class="dot-border"></span><span class="price">$52</span>
+                            </h3>
+                            <p>
+                                Seafood pizza is a type of pizza topped with a variety of seafood such as shrimp,
+                                clams, mussels, and sometimes even squid or octopus, along with cheese and tomato
+                                sauce.
+                            </p>
+                            <ul class="ratings">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><span><a>(19k Reviews)</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center pt-80">
+            <div class="col-lg-6">
+                <div class="menu-content-box pl-lg-30 mb-50 wow fadeInUp">
+                    <div class="single-menu-item mb-30">
+                        <div class="thumb">
+                            <img src="~/Content/images/menu/thumb-5.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h3 class="item-title-price">
+                                @Html.ActionLink("Pasta Fettuccine", "Products", "Pages")
+                                <span class="dot-border"></span><span class="price">$25</span>
+                            </h3>
+                            <p>
+                                Fettuccine pasta is a long, flat noodle that is often served with creamy sauces or in
+                                dishes such as Fettuccine Alfredo.
+                            </p>
+                            <ul class="ratings">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><span><a>(34k Reviews)</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="single-menu-item mb-30 wow fadeInUp">
+                        <div class="thumb">
+                            <img src="~/Content/images/menu/thumb-6.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h3 class="item-title-price">
+                                @Html.ActionLink("Submarine Sandwich", "Products", "Pages")
+                                <span class="dot-border"></span><span class="price">$48</span>
+                            </h3>
+                            <p>
+                                A submarine sandwich, also known as a sub, is a type of sandwich made with a long
+                                roll of bread filled with various meats, cheeses, vegetables, and condiments.
+                            </p>
+                            <ul class="ratings">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><span><a>(32k Reviews)</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="single-menu-item mb-30 wow fadeInUp">
+                        <div class="thumb">
+                            <img src="~/Content/images/menu/thumb-7.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h3 class="item-title-price">
+                                @Html.ActionLink("Chicken Biryani", "Products", "Pages")
+                                <span class="dot-border"></span><span class="price">$105</span>
+                            </h3>
+                            <p>
+                                Chicken Biryani is a South Asian rice dish made with flavorful spices, long-grain
+                                rice, and chicken that is marinated and cooked in a yogurt-based sauce.
+                            </p>
+                            <ul class="ratings">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><span><a>(15k Reviews)</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="single-menu-item mb-30 wow fadeInUp">
+                        <div class="thumb">
+                            <img src="~/Content/images/menu/thumb-8.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h3 class="item-title-price">
+                                @Html.ActionLink("Shawarma-roll", "Products", "Pages")
+                                <span class="dot-border"></span><span class="price">$52</span>
+                            </h3>
+                            <p>
+                                A shawarma roll is a Middle Eastern street food consisting of seasoned meat (often
+                                chicken or lamb) cooked on a rotating spit, wrapped in a warm flatbread, and
+                                typically served with vegetables and sauces.
+                            </p>
+                            <ul class="ratings">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><span><a>(55k Reviews)</a></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="menu-img-box mb-50 pl-lg-40 wow fadeInRight">
+                    <img src="~/Content/images/menu/menu-single-2.png" alt="Menu Image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!--=== End Menu Section ===-->
