@@ -539,6 +539,7 @@
     <Content Include="Views\Pages\MenuSeaFood.cshtml" />
     <Content Include="Views\Pages\Products.cshtml" />
     <Content Include="Views\Pages\Reservations.cshtml" />
+    <Content Include="Views\Pages\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

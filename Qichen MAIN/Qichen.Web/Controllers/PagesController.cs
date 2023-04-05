@@ -9,6 +9,10 @@ namespace Qichen.Web.Controllers
     public class PagesController : Controller
     {
         // GET: Pages
+        public ActionResult Index()
+        {
+            return View();
+        }
         public ActionResult Err404()
         {
             return View();
