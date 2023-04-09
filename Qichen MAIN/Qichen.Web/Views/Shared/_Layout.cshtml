@@ -26,6 +26,16 @@
 
 </head>
 <body>
+    @Html.Partial("_preloader")
+    @Html.Partial("_searchFrom")
+    @Html.Partial("_header")
+    @Html.Partial("_banner")
+    @Html.Partial("_category")
+    @Html.Partial("_chef")
+    @Html.Partial("_working")
+    @Html.Partial("_footer")
+
+    <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
     @RenderBody()
 
     @Scripts.Render("~/bundles/jquery/js")
