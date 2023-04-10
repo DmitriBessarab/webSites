@@ -13,8 +13,8 @@
         {"FAQ","He who has his stomach full only 80 % will not need a doctor." },
         {"Gallery","Eat it raw before all else, then grill it, and boil it last of all." },
         {"Index","One Japanese plum a day is an escape from that one day struggle." },
-        {"Menu Fastfood","You can’t eat the mochi in the picture." },
-        {"Menu Seafood","Even rotten sea bream is sea bream." },
+        {"Fast Food","You can’t eat the mochi in the picture." },
+        {"Sea Food","Even rotten sea bream is sea bream." },
         {"Products","A samurai, even when he has not eaten, uses his toothpick." },
         {"Reservation", "There are even bugs that eat knotweed."}
     };
@@ -54,7 +54,7 @@
             <div class="primary-menu">
                 <!--=== Site Branding ===-->
                 <div class="site-branding">
-                    <a href="@Url.Action("Index", "Pages")" class="brand-logo">
+                    <a href="index.html" class="brand-logo">
                         <img src="../Content/images/logo/logo-white.png"
                              alt="Site Logo">
                     </a>
@@ -118,14 +118,82 @@
                             </div>
                         </div>
                         <!-- Кнопка-триггер модального окна -->
-                        <button type="button" class="main-btn btn-red">
-                            @Html.ActionLink("Registration", "Registration", "Pages")
+                        <button type="button" class="main-btn btn-red" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                            Registration
                         </button>
 
-                        <div class="menu-button  d-xl-block d-none">
-                            <button type="button" class="main-btn btn-red">
-                                @Html.ActionLink("Login", "Login", "Pages")
-                            </button>
+                        <!-- Модальное окно -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                             data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                             aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header" style="background-color:#DF3F00;">
+                                        <h5 class="modal-title" id="staticBackdropLabel">Registration</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Закрыть"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">
+                                                    User
+                                                    Name:
+                                                </label>
+                                                <input type="user" class="form-control" id="exampleInputEmail1"
+                                                       aria-describedby="emailHelp" style="background-color:#FDF5F2;">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">
+                                                    Email
+                                                    address:
+                                                </label>
+                                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                                       aria-describedby="emailHelp" style="background-color:#FDF5F2;">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleInputPassword1"
+                                                       class="form-label">Password:</label>
+                                                <input type="password" class="form-control"
+                                                       id="exampleInputPassword1" style="background-color:#FDF5F2;">
+                                                <div id="emailHelp" class="form-text">
+                                                    We'll never share your pass
+                                                    with anyone else.
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleInputPassword1" class="form-label">
+                                                    Confirm
+                                                    Password:
+                                                </label>
+                                                <input type="password_re" class="form-control"
+                                                       id="exampleInputPassword1" style="background-color:#FDF5F2;">
+                                                <div id="emailHelp" class="form-text">Use only the keyboard.</div>
+                                            </div>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">
+                                                    Check me
+                                                    out
+                                                </label>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer" style="background-color:#DF3F00;">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                                                style="background-color:#000000;">
+                                            Cancel
+                                        </button>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-button d-xl-block d-none">
+                            <a href="reservations.html" class="main-btn btn-red">
+                                Book a Table<i class="fa fa-long-arrow-right"></i>
+                            </a>
                         </div>
                         <div class="navbar-toggler">
                             <span></span>
@@ -148,10 +216,12 @@
                 <div class="page-banner-content text-center wow fadeInDown">
                     <h1 class="page-title">@ViewBag.Title</h1>
                     <ul class="breadcrumb-link text-white">
-                        <li>@Html.ActionLink("Home", "Index", "Pages")</li>
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li class="active">@ViewBag.Title</li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 </section><!--====== End Breadcrumb Section ======-->
+<!--=== Start Menu Section ===-->
