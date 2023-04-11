@@ -237,7 +237,6 @@ D:\UTM\WEB\webSites-main\Qichen MAIN\Qichen.Web\obj\Debug\Qichen.Web.csproj.Core
 D:\UTM\WEB\webSites-main\Qichen MAIN\Qichen.Web\obj\Debug\Qichen.Web.csproj.CopyComplete
 D:\UTM\WEB\webSites-main\Qichen MAIN\Qichen.Web\obj\Debug\Qichen.Web.dll
 D:\UTM\WEB\webSites-main\Qichen MAIN\Qichen.Web\obj\Debug\Qichen.Web.pdb
-D:\UTM\WEB\webSites\Qichen MAIN\Qichen.Web\obj\Debug\Qichen.Web.csproj.AssemblyReference.cache
 C:\Users\Utilizador\Desktop\Новая папка\webSites\Qichen MAIN\Qichen.Web\bin\Qichen.Web.dll.config
 C:\Users\Utilizador\Desktop\Новая папка\webSites\Qichen MAIN\Qichen.Web\bin\Qichen.Web.dll
 C:\Users\Utilizador\Desktop\Новая папка\webSites\Qichen MAIN\Qichen.Web\bin\Qichen.Web.pdb

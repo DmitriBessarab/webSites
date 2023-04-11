@@ -493,6 +493,7 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Vendor\fonts\flaticon\flaticon.eot" />
     <Content Include="Vendor\fonts\flaticon\flaticon.scss" />
     <Content Include="Vendor\fonts\flaticon\flaticon.ttf" />
@@ -539,13 +540,10 @@
     <Content Include="Views\Pages\Products.cshtml" />
     <Content Include="Views\Pages\Reservations.cshtml" />
     <Content Include="Views\Pages\Index.cshtml" />
-<<<<<<< HEAD
     <Content Include="Views\Pages\Registration.cshtml" />
     <Content Include="Views\Pages\Login.cshtml" />
     <Content Include="Views\Shared\_Layout_Reg_Log.cshtml" />
-=======
-    <Content Include="Views\Home\Index.cshtml" />
->>>>>>> 415d00d49a676c10b475f404aa7e127c74231e06
+    <Content Include="Views\Shared\_header_index_guest.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
